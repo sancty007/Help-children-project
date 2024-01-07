@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+              .padding{
+                padding:0px ;
+              }
+              .custom_buttom{
+                font-size: 0.8em;
+              }
+            
+            /* Personnalisation de l'icône de lecture dans un lecteur vidéo */
+            video::-webkit-media-controls-start-playback-button {
+                border: 2px solid red; /* Exemple de style de bordure */
+            }
+
+                    
+        </style>
+    </head>
+    <body>
+
+
+
+
+        <div class="container-fluid bg-warning">
+            <!-- Utilisation de flexbox pour placer les éléments horizontalement avec un espacement égal -->
+            <div class="d-flex justify-content-between">
+                <!-- Première section pour l'adresse -->
+                <div>
+                    <div class="row">
+                        <div class="col-1 ">
+                            <!-- Icône de localisation -->
+                            <i class="fas fa-map-marker-alt" style="background-color: transparent;"></i>
+                        </div>
+                        <div class="col-11 p-0">
+                            <!-- Liste pour l'adresse -->
+                            <ul class="list-unstyled m-0">
+                                <li>Lorem, ipsum dolor sit amet consectetur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Deuxième section pour l'e-mail -->
+                <div>
+                    <div class="row">
+                        <div class="col-1 p-0">
+                            <!-- Icône d'e-mail -->
+                            <i class="fas fa-envelope" style="background-color: transparent;"></i>
+                        </div>
+                        <div class="col-11 p-0">
+                            <!-- Liste pour l'e-mail -->
+                            <ul class="list-unstyled m-0">
+                                <li>Lorem, ipsum dolor sit amet consectetur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Troisième section pour les réseaux sociaux -->
+                <div class="d-flex">
+                    <div class="me-2">
+                        <!-- Texte "Suivez-nous" -->
+                        <p class="">Suivez-nous:</p>
+                    </div>
+                    <div class="">
+                        <!-- Icônes des réseaux sociaux avec des liens -->
+                        <i class="fab fa-instagram me-2"><a href="http:/google.com"></a></i>
+                        <i class="fab fa-linkedin me-2"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Autre section  -->
+        <div class="container-fluid bg-white p-4">
+            <div class="row">
+                <!-- Éléments alignés à gauche -->
+                <div class="col-md-4 col-sm-12 justify-content-center align-items-center"> <!-- Ajout de la classe ms-auto -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <img src="img/logo.png" class="" style="width: 100px; height: 100px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Barre de navigation centrée -->
+                <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+                    <nav class="navbar navbar-expand-lg navbar-light " id="Navbar">
+                        <div id="navbarNav" class="container ">
+                            <ul class="navbar-nav">
+                                <li class="nav-item text-center">
+                                    <a href="" class="nav-link">Accueil</a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a href="" class="nav-link">À propos</a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a href="" class="nav-link">Faire un don</a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a href="" class="nav-link">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+        
+                <!-- Éléments alignés à droite -->
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center ">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <div class="bg-secondary d-flex align-items-center justify-content-center"> 
+                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex">
+                                <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-telephone-plus-fill text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        <!-- Autre section -->
+        <section class="container-fluid card-img-top " style="background-image: url(./img/MereEtfille.jpg); background-size: cover; background-repeat: no-repeat; width: 100%; height: 100vh;">
+
+            <!-- Centrer le contenu verticalement -->
+            <div class="d-flex align-items-center justify-content-center py-5" style="height: 100%;">
+                <div class="container text-white">
+        
+                    <!-- Titre principal avec une icône -->
+                    <p class="icon-with-text">
+                        <i class="fas fa-heart text-warning" style="font-size: 20px;"></i> Lorem ipsum dolor sit amet.
+                    </p>
+        
+                    <!-- Contenu principal -->
+                    <div class="row text-white">
+                        <!-- Utilisation de classes de typographie pour les titres -->
+                        <div class="col-md-12">
+                            <p class="text-bold fs-1">Lorem ipsum dolor sit <br> amet Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam nobis impedit amet autem consequatur est atque voluptatem iure magnam, explicabo deleniti sint rerum q</p>
+                        </div>
+                    </div>
+        
+                    <!-- Boutons d'action -->
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-sm-12 mb-3">
+                            <!-- Bouton "Contactez" -->
+                            <button class="btn btn-outline-white text-white border-white btn-lg rounded-0 w-100">
+                                Contactez <i class="fas fa-arrow-right" style="font-size: 0.7em;"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <!-- Bouton "Faire un Don" -->
+                            <button type="button" class="btn btn-warning btn-lg text-white rounded-0 w-100">
+                                Faire un Don <i class="fas fa-arrow-right" style="font-size: 0.7em;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+    <!-- Autre section -->
+
+        <div class="container mt-5 py-5">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Première carte -->
+                <div class="col">
+                    <div class="card h-100 custom-card-style rounded-0 d-flex justify-content-center align-items-center">
+                        <img src="img/logo.png" class="card-img-top w-50" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deuxième carte -->
+                <div class="col">
+                    <div class="card h-100 custom-card-style rounded-0 d-flex justify-content-center align-items-center">
+                        <img src="img/logo.png" class="card-img-top w-50" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Troisième carte -->
+                <div class="col">
+                    <div class="card h-100 custom-card-style rounded-0 d-flex justify-content-center align-items-center ">
+                        <img src="img/logo.png" class="card-img-top w-50" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quatrième carte -->
+                <div class="col">
+                    <div class="card h-100 custom-card-style rounded-0 d-flex justify-content-center align-items-center">
+                        <img src="img/logo.png" class="card-img-top w-50 " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+          
+
+            <!-- section  collecte de fond -->
+        
+            <div class="container d-flex align-items-center justify-content-center py-5">
+                <div class="py-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Titre avec icône -->
+                            <p class="icon-with-text">
+                                <i class="fas fa-heart text-warning" style="font-size: 20px;"></i> Rejoignez-nous et faites un Don
+                            </p>
+                            <div class="mb-5">
+                                <!-- Titres -->
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                            </div>
+                            <!-- Paragraphe principal -->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam error maiores voluptatum? Ipsum exercitationem optio sequi minus suscipit harum atque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi facere quisquam rem iusto, eaque quidem laborum nobis. Quod, alias repellat </p>
+
+                            <!-- Listes à puces -->
+                            <div class="row mt-3 mb-5">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-square text-warning custom_buttom"></i> Faire une santé de qualité</li>
+                                        <li><i class="fas fa-square text-warning custom_buttom"></i> Lorem, ipsum dolor.</li>
+                                        <li><i class="fas fa-square text-warning custom_buttom"></i> Lorem, ipsum dolor.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-square text-warning custom_buttom"></i> Lorem, ipsum dolor.</li>
+                                        <li><i class="fas fa-square text-warning custom_buttom"></i> Lorem, ipsum dolor.</li>
+                                        <li><i class="fas fa-square text-warning custom_buttom"></i> Lorem, ipsum dolor.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Bouton désactivé -->
+                            <button type="button" class="btn btn-lg btn-warning rounded-0 py-1" disabled style="width: 200px;">Primary button</button>
+                        </div>
+                        <div class="col-md-6 rounded-0">
+                            <!-- Image -->
+                            <img src="img/about-thumb.png" class="img-fluid rounded-0" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+          
+
+
+            <!-- Autre section -->
+
+            <div class="contenaire bg-light ">
+                <div class="container">
+                    <div class="container text-center py-5">
+
+                        <p class="icon-with-text">
+                            <i class="fas fa-heart text-warning px-1" style="font-size: 20px;"></i>
+                            Lorem ipsum dolor sit amet.
+                            <i class="fas fa-heart text-warning px-1" style="font-size: 20px;"></i>
+                        </p>
+                        
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Première colonne card 1 -->
+                        <div class="col-md-4">
+                            <div class="row justify-content-center">
+                                <!-- Première colonne card 1 -->
+                                <div class="container mt-3">
+                                    <div class="card  mx-auto rounded-0" style="width: 300px;">
+                                        <div class="text-center" style="height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <img class="card-img-top rounded-0" src="img/service1.png" alt="Card image" style="height: 50%; object-fit: cover;">
+                                            <div class="mt-auto bg-warning py-3  d-flex align-items-center justify-content-center " style="height: 10%; position:absolute; z-index-1; top:180px;">
+                                                <h3 class="text-center">Titre en haut</h3>
+                                            </div>
+                                            <div class="card-body d-flex flex-column justify-content-center text-center">
+                                                <h4 class="card-title">John Doe</h4>
+                                                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <!-- Deuxième colonne card 2 -->
+                        <div class="col-md-4 ">
+                            <div class="row justify-content-center">
+                                <!-- Première colonne card 1 -->
+                                <div class="container mt-3">
+                                    <div class="card mx-auto rounded-0" style="width: 300px;">
+                                        <div class="text-center" style="height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <img class="card-img-top rounded-0" src="img/service2.png" alt="Card image" style="height: 50%; object-fit: cover;">
+                                            <div class="mt-auto bg-warning py-3  d-flex align-items-center justify-content-center " style="height: 10%; position:absolute; z-index-1; top:180px;">
+                                                <h3 class="text-center">Titre en haut</h3>
+                                            </div>
+                                            <div class="card-body d-flex flex-column justify-content-center text-center">
+                                                <h4 class="card-title">John Doe</h4>
+                                                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                
+                        <!-- Troisième colonne card 3 -->
+                        <div class="col-md-4">
+                            <div class="row justify-content-center">
+                                <!-- Première colonne card 1 -->
+                                <div class="container mt-3">
+                                    <div class="card mx-auto rounded-0" style="width: 300px;">
+                                        <div class="text-center" style="height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <img class="card-img-top rounded-0" src="img/service3.png" alt="Card image" style="height: 50%; object-fit: cover;">
+                                            <div class="mt-auto bg-warning py-3  d-flex align-items-center justify-content-center " style="height: 10%; position:absolute; z-index-1; top:180px;">
+                                                <h3 class="text-center">Titre en haut</h3>
+                                            </div>
+                                            <div class="card-body d-flex flex-column justify-content-center text-center ">
+                                                <h4 class="card-title ">John Doe</h4>
+                                                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center mt-5">
+                    <p class="border border-warning text-center py-2 w-50 rounded-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                
+                
+            </div>
+                
+
+         <!-- Autre card horizontal -->
+         <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container mt-3">
+                        <div class="card w-500 rounded-0">
+                            <div class="d-flex h-auto" >
+                                <img class="card-img-top rounded-0" src="img/img2.jpg" alt="Card image" style="width: 50%; object-fit: cover;">
+                                <div class="card-body" style="width: 50%;">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-map-marker-alt"></i> Lorem, ipsum.</li>
+                                        <li><i class="far fa-clock"></i> Lorem, ipsum.</li>
+                                    </ul> 
+                                    <button type="button" class="btn btn-warning rounded-0">Warning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <div class="container mt-3">
+                        <div class="card w-500 rounded-0">
+                            <div class="d-flex h-auto">
+                                <img class="card-img-top rounded-0" src="img/img1.jpg" alt="Card image" style="width: 50%; object-fit: cover;">
+                                <div class="card-body" style="width: 50%;">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-map-marker-alt"></i> Lorem, ipsum.</li>
+                                        <li><i class="far fa-clock"></i> Lorem, ipsum.</li>
+                                    </ul>                                    
+                                    <button type="button" class="btn btn-warning rounded-0">Warning</button>
+                                  
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+         </div>
+         <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container mt-3">
+                        <div class="card w-500 rounded-0">
+                            <div class="d-flex h-auto" >
+                                <img class="card-img-top rounded-0" src="img/img2.jpg" alt="Card image" style="width: 50%; object-fit: cover;">
+                                <div class="card-body" style="width: 50%;">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-map-marker-alt"></i> Lorem, ipsum.</li>
+                                        <li><i class="far fa-clock"></i> Lorem, ipsum.</li>
+                                    </ul> 
+                                    <button type="button" class="btn btn-warning rounded-0">Warning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <div class="container mt-3">
+                        <div class="card w-500 rounded-0">
+                            <div class="d-flex h-auto">
+                                <img class="card-img-top rounded-0" src="img/img1.jpg" alt="Card image" style="width: 50%; object-fit: cover;">
+                                <div class="card-body" style="width: 50%;">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-map-marker-alt"></i> Lorem, ipsum.</li>
+                                        <li><i class="far fa-clock"></i> Lorem, ipsum.</li>
+                                    </ul> 
+                                    <button type="button" class="btn btn-warning rounded-0">Warning</button>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
+         </div>
+
+         <!-- Autre section video -->
+         <div class="container-fluid bg-light">
+            <div class="row">
+                <div class="col">
+                    <div class="embed-responsive embed-responsive-16by9" style="width: 100%; height: 100%;">
+                        <video class="embed-responsive-item controls" controls style="width: 100%; height: 100%;">
+                            <source src="" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de la vidéo.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+         <!-- Autre section  -->
+         <div class="container bg-white p-5" style="height: 800px;">
+            <p class="icon-with-text text-center">
+                <i class="fas fa-heart text-warning px-1" style="font-size: 20px;"></i>
+                Lorem ipsum dolor sit amet.
+                <i class="fas fa-heart text-warning px-1" style="font-size: 20px;"></i>
+            </p>
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+            <div class="container py-5 justify-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card text-bg-dark rounded-0">
+                            <img src="img/service1.png" class="card-img rounded-0" alt="...">
+                            <div class="card-img-overlay align-items-center">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="card text-bg-dark rounded-0">
+                            <img src="img/service2.png" class="card-img rounded-0" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- Autre section  -->
+
+         <section class="container-fluid py-5" style="background-image: url(img/img2.jpg); background-size: cover; background-repeat: no-repeat; width: 100%;">
+            <div class="container">
+                <div class="row "><!-- Ajout de justify-content-center pour centrer le contenu horizontalement -->
+                    <!-- Colonne pour l'image -->
+                    <div class="col-md-6">
+                        <div class="container text-white ">
+                            <!-- Contenu principal -->
+                            <div class=" "><!-- Centrer le contenu verticalement et horizontalement -->
+                                <p class="icon-with-text">
+                                    <i class="fas fa-heart text-warning" style="font-size: 20px;"></i> Lorem ipsum dolor sit amet.
+                                </p>
+                                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam optio fuga, blanditiis illo minus repellendus dicta dolorum iusto facilis aperiam deserunt, voluptate totam placeat autem excepturi voluptas doloremque sapiente! Ab?</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-telephone-plus-fill text-warning" style="font-size:50px;"></i>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <p class="text-warning">Lorem ipsum dolor sit amet consecte</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-warning btn-lg text-white rounded-1 mt-auto">
+                                        Donation now <i class="fas fa-arrow-right" style="font-size: 0.7em;"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Colonne pour le formulaire -->
+                    <div class="col-md-6 bg-light">
+                        <div class="container py-5  align-items-center"><!-- Centrer le contenu verticalement et horizontalement -->
+                            <!-- Titre du formulaire -->
+                            <h3 class="mb-5">Lorem ipsum, dolor sit amet consectetur</h3>
+        
+                            <!-- Champ de saisie de texte simple avec un espace en bas -->
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control rounded-0" id="formGroupExampleInput1" placeholder="Example input">
+                            </div>
+        
+                            <!-- Champ de saisie de texte avec deux colonnes et un espacement -->
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="First name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="Last name">
+                                </div>
+                            </div>
+        
+                            <!-- Autre champ de saisie de texte simple avec un espacement -->
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control rounded-0" id="formGroupExampleInput2" placeholder="Example input">
+                            </div>
+        
+                            <!-- Autre champ de saisie de texte simple avec un espacement -->
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control rounded-0" id="formGroupExampleInput3" placeholder="Example input">
+                            </div>
+        
+                            <!-- Champ de saisie de texte multiligne sans modification de taille -->
+                            <div class="form-group mb-3">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
+                            </div>
+
+                            <button type="button" class="btn btn-warning btn-lg  w-100 text-white srounded-0 mt-auto mb-3 d-flex justify-content-center align-items-center rounded-0"  >
+                                Send message 
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+          
+        <!-- Autre section  -->
+
+        <div class="container py-5 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="card-img-top rounded-0 " src="img/service1.png" alt="">
+                </div>
+
+                <div class="col-md-6 py-2 px-5">
+
+                    <p class="icon-with-text">
+                        <i class="fas fa-heart text-warning " style="font-size: 20px;"></i> Lorem ipsum dolor sit amet.
+                      </p>
+
+                    <h3 class="py-2">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur porro ipsa totam odit commodi blanditiis assumenda inventore repellat eligendi! Odio enim laboriosam veritatis dolor in soluta numquam cupiditate, excepturi voluptatibus!</p>
+                    <button type="button" class="btn btn-warning btn-lg text-white rounded-1 mt-auto" >
+                        Faire un Don Maintenant <i class="fas fa-arrow-right " style="font-size: 0.7em;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Autre section footer -->
+        <footer class="footer bg-light text-black text-center py-3">
+            <div class="container">
+                <p>Contenu du footer - Droits d'auteur © 2024 Votre Entreprise. Tous droits réservés.</p>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>
